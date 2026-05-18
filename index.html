@@ -1,53 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Pessoal</title>
+
     <style>
-    body    {
-        background-color: rgb(255, 255, 255);
-        font-family: 'Courier New', Courier, monospace;
-        font-size: x-large;
-    }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+
+        nav{
+            background-color: #0f172a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover{
+            color: #38bdf8;
+        }
+
+        .hero{
+            background: linear-gradient(to right, #0f172a, #1e3a8a);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .hero h1{
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p{
+            font-size: 18px;
+        }
+
+        section{
+            max-width: 800px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h2{
+            margin-bottom: 20px;
+            color: #0f172a;
+        }
+
+        .card{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h3{
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .card p{
+            line-height: 1.6;
+        }
+
+        a{
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        footer{
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
     </style>
-    <hr style="color: rgb(0, 0, 0);" <body>
 </head>
+
 <body>
- 
-    <br>
-<section></section>
-<section></section>
-<h1>Celso Carlos Emydio da Silva Neto</h1>
-<br>
 
-        <ul><li><a target="_blank" href="mailto:celso.neto@unifebe.edu.br">celso.neto@unifebe.edu.br</a></li>
-    <li>Telefone: (47)99284-0603 </li></ul>
-    <br>
-    <hr>
-  
-<header>
-    
-    <section>
-        <h2>Formação:</h2>
-        <ul><li>Ensino médio completo (Colégio São Luiz).</li>
-        <li>Atualmente cursando Sistemas de Informação (UNIFEBE).</li></ul>
-        <br>
-        <hr>
-      
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#formacao">Formação</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="hero">
+
+        <h1>Celso Carlos Emydio da Silva Neto</h1>
+
+        <p>Estudante de Sistemas de Informação</p>
+
+    </div>
+
+    <section id="sobre">
+
+        <h2>Sobre Mim</h2>
+
+        <div class="card">
+
+            <h3>💻 Desenvolvimento</h3>
+
+            <p>
+                Estou aprendendo HTML, CSS e desenvolvimento web
+                para criar sites modernos.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🚀 Objetivos</h3>
+
+            <p>
+                Crescer profissionalmente na área da tecnologia.
+            </p>
+
+        </div>
+
     </section>
-    
 
+    <section id="formacao">
 
-    </main>
-    <!--Isso é um comentário-->
+        <h2>Formação</h2>
 
-    <br>
+        <div class="card">
+
+            <h3>🎓 Ensino Médio</h3>
+
+            <p>Colégio São Luiz</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🏫 Faculdade</h3>
+
+            <p>Sistemas de Informação - UNIFEBE</p>
+
+        </div>
+
+    </section>
+
+    <section id="contato">
+
+        <h2>Contato</h2>
+
+        <div class="card">
+
+            <p>
+                📧
+                <a href="mailto:celso.neto@unifebe.edu.br">
+                    celso.neto@unifebe.edu.br
+                </a>
+            </p>
+
+            <br>
+
+            <p>📱 (47) 99284-0603</p>
+
+        </div>
+
+    </section>
+
     <footer>
         Desenvolvido por Celso Carlos Emydio da Silva Neto
-</header>
+    </footer>
+
 </body>
 
 </html>
